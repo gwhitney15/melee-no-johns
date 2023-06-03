@@ -64,6 +64,10 @@ johnArray = [
   "Someone was yelling in my ear.",
   "The bees outside my window kept me up all night.",
   "I tried too hard to be Mang0.",
+  "You only won because I SD'd twice.",
+  "My hands hurt.",
+  "I was dehydrated.",
+  "My little brother was playing on my account.",
 ];
 
 function random_item(johnArray) {
