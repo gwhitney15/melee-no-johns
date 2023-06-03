@@ -68,6 +68,20 @@ johnArray = [
   "My hands hurt.",
   "I was dehydrated.",
   "My little brother was playing on my account.",
+  "I shouldn't have homie stocked.",
+  "This isn't my controller.",
+  "I was seeded wrong.",
+  "I forgot to take my training weights off.",
+  "My controller has snapback.",
+  "I got battlefielded.",
+  "You were lag switching bro.",
+  "Pokemon Stadium was unfrozen.",
+  "I had jet lag.",
+  "You won RPS for port 4.",
+  "You're using a phob.",
+  "It was online so it doesn't count.",
+  "I was playing a secondary.",
+  "You had a better gaming chair.",
 ];
 
 function random_item(johnArray) {
