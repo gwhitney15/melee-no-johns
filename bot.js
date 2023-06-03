@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 require("discord-reply");
 const client = new discord.Client();
-require("dotenv").config("/.env");
+require("dotenv").config();
 const token = process.env.SECRET_TOKEN;
 client.on("ready", () => {
   console.log(client.user.tag);
