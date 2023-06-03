@@ -1,3 +1,7 @@
+const express = require("express");
+const app = express();
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 const discord = require("discord.js");
 require("discord-reply");
 const client = new discord.Client();
@@ -65,3 +69,7 @@ johnArray = [
 function random_item(johnArray) {
   return johnArray[Math.floor(Math.random() * johnArray.length)];
 }
+
+app.listen(process.env.PORT || 3001, "0.0.0.0", () => {
+  console.log("Server is running.");
+});
