@@ -18,7 +18,7 @@ client.on("message", async (message) => {
       message.lineReply(random_item(johnArray));
       break;
     case "!KCBLUE":
-      message.lineReply(MessageAttachment(KCBLUE));
+      message.channel.send({ files: ["./Video/kcblue.mp4"] });
       break;
     case "!REESCH":
       message.lineReply(reesch);
