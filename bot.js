@@ -12,35 +12,51 @@ client.on("ready", () => {
 });
 
 client.on("message", async (message) => {
-  if (message.content.startsWith("!nojohns")) {
-    message.lineReply(random_item(johnArray));
+  var messagetxt = message.content.toUpperCase();
+  switch (messagetxt) {
+    case "!NOJOHNS":
+      message.lineReply(random_item(johnArray));
+      break;
+    case "!KCBLUE":
+      message.lineReply(KCBLUE);
+      break;
+    case "!REESCH":
+      message.lineReply(reesch);
+      break;
+    case "!ITSGDUBS":
+      message.lineReply(itsgdubs);
+      break;
+    case "!GDUBS":
+      message.lineReply(itsgdubs);
+      break;
+    case "!FALCON":
+      message.lineReply(random_item(falcon));
+      break;
   }
 });
 
 client.login(token);
 
-johnArray = [
+var falcon = ["PUNCH!!!!!!!!!!", "Show me your moves!"];
+var itsgdubs =
+  "The best bad player to ever do it - and your friendly neighborhood bot developer :)";
+var reesch = "That's COACH Reesch to you.";
+var KCBLUE = "./Videos/KcBlue.mp4";
+var johnArray = [
   "I only got two hours of sleep last night.",
   "I woke up late for pools.",
-  "My thumb sprained during game 2.",
-  "You just spammed overpowered moves.",
   "I was playing worse because Jupiter is in retrograde.",
   "Your controller has a turbo button, that's cheating.",
   "Your box SDI is the only reason you won.",
   "My smartfridge forgot to order energy drinks, I didn't have caffeine before bracket.",
-  "I was playing with a broken controller.",
-  "I forgot to plug my controller in.",
+  "My controller is trash.",
   "Pikachu destroys my character. - KcBlue",
   "My girlfriend just sent me a breakup text.",
   "I was playing Street Fighter 6 all day.",
   "The ledgedash goblins didn't accept my sacrifice today.",
-  "My CRT electrocuted me, I was playing shaken.",
-  "The pharmacy was out of adderall.",
-  "My controller is covered in grease.",
   "Hbox broke this CRT before we sat down to play.",
   "This TV has lag.",
   "This is an old version of UCF.",
-  "My C-stick fell off in the middle of that combo.",
   "My netplay setup feels different than CRT.",
   "It always takes me so long to adjust to CRT.",
   "Mang0 said this matchup is 70-30.",
@@ -50,13 +66,6 @@ johnArray = [
   "I'm not warmed up yet.",
   "Jigglypuff. - Hbox",
   "I couldn't hear the game audio over my crying.",
-  "I made some crucial mistakes.",
-  "I need to learn how to edgeguard better.",
-  "Your counterpicks worked in your favor.",
-  "I need to work on my punishes.",
-  "You capitalized on every mistake I made.",
-  "You outplayed me in every aspect. - nobody ever",
-  "You're definitely one of the top players.",
   "I'm just a mid-tier main.",
   "Melee is a bad game anyway.",
   "I'm just a casual player.",
@@ -82,6 +91,59 @@ johnArray = [
   "It was online so it doesn't count.",
   "I was playing a secondary.",
   "You had a better gaming chair.",
+  "I thought it was a hand warmer.",
+  "Sheik mains....",
+  "TWO Ice Climbers in my pool?!",
+  "I was trying a new controller.",
+  "I haven't adjusted to z jump yet.",
+  "This matchup is so bad for me.",
+  "It was so loud in the venue.",
+  "My lawyer advised me to drop that combo.",
+  "I haven't played in a few weeks.",
+  "I was saving my energy for later.",
+  "I was trying to be respectful.",
+  "I was trying to be cool.",
+  "My car was stolen.",
+  "I just got off work.",
+  "I was a little cross faded.",
+  "You would cry if you had to play my bracket.",
+  "The TO is my ex.",
+  "They were camping.",
+  "They kept taking me to unfrozen stadium.",
+  "I had Reesch round 1...",
+  "Wasn't feeling it today.",
+  "I had to fight Rahma twice.",
+  "There are too many Marths in my region.",
+  "I'm probably dehydrated.",
+  "I was playing on a different setup earlier.",
+  "I always lose on the stream setup.",
+  "Why is the venue so cold?",
+  "Who seeded this?",
+  "At least Wohlgey was there to pick me back up.",
+  "They're not even good dude.",
+  "It lagged everytime I got a grab.",
+  "I'm not used to fighting button mashers.",
+  "My hands are almost as sweaty as your gameplay.",
+  "Marth grabs are ridiculous.",
+  "Double Jump armor is so broken.",
+  "You would play that character.",
+  "They just got lucky.",
+  "What are you without laser?",
+  "My C stick kept getting stuck.",
+  "I dropped my Phob before the set.",
+  "Fox is so broken.",
+  "He was just spamming up smash.",
+  "My opponent didn't use deodorant.",
+  "Its been awhile since I've played IRL.",
+  "I haven't played since the Bush administration.",
+  "Their mind games were too basic for me to predict.",
+  "I win that on PAL.",
+  "The cosmic rays are unusually strong today.",
+  "I forgot to do my pre-game ritual.",
+  "My glasses are smudged.",
+  "I wasn't going to win the next set anyway.",
+  "I was blinded by Pkay's drip.",
+  "How many times do I have to tell you? I'm not a Fox main!!!!",
 ];
 
 function random_item(johnArray) {
