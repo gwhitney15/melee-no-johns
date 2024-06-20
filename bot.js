@@ -18,7 +18,7 @@ client.on("message", async (message) => {
       message.lineReply(random_item(johnArray));
       break;
     case "!KCBLUE":
-      message.lineReply(KCBLUE);
+      message.lineReply(MessageAttachment(KCBLUE));
       break;
     case "!REESCH":
       message.lineReply(reesch);
