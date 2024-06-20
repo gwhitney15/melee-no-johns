@@ -41,7 +41,7 @@ var falcon = ["PUNCH!!!!!!!!!!", "Show me your moves!"];
 var itsgdubs =
   "The best bad player to ever do it - and your friendly neighborhood bot developer :)";
 var reesch = "That's COACH Reesch to you.";
-var KCBLUE = "./Videos/KcBlue.mp4";
+var KCBLUE = "./Video/kcblue.mp4";
 var johnArray = [
   "I only got two hours of sleep last night.",
   "I woke up late for pools.",
