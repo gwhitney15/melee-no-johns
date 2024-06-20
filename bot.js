@@ -20,6 +20,9 @@ client.on("message", async (message) => {
     case "!KCBLUE":
       message.channel.send({ files: ["./Video/kcblue.mp4"] });
       break;
+    case "!PIKACHU":
+      message.channel.send({ files: ["./Video/kcblue.mp4"] });
+      break;
     case "!REESCH":
       message.lineReply(reesch);
       break;
@@ -29,19 +32,30 @@ client.on("message", async (message) => {
     case "!GDUBS":
       message.lineReply(itsgdubs);
       break;
+    case "!CUDA":
+      message.lineReply(cuda);
+      break;
     case "!FALCON":
       message.lineReply(random_item(falcon));
+      break;
+    case "!JIGGLYPUFF":
+      message.lineReply(Jigglypuff);
+      break;
+    case "!INFO":
+      message.lineReply(botInfo);
       break;
   }
 });
 
 client.login(token);
-
+var botInfo =
+  "Melee No Johns Bot by itsgdubs. Commands: !nojohns, !kcblue, !pikachu, !reesch, !itsgdubs, !gdubs, !cuda, !falcon, !jigglypuff.";
 var falcon = ["PUNCH!!!!!!!!!!", "Show me your moves!"];
 var itsgdubs =
   "The best bad player to ever do it - and your friendly neighborhood bot developer :)";
 var reesch = "That's COACH Reesch to you.";
-var KCBLUE = "./Video/kcblue.mp4";
+var Jigglypuff = "*sleeps*";
+var cuda = "You thought I was gonna say the doubles connect code didn't you?";
 var johnArray = [
   "I only got two hours of sleep last night.",
   "I woke up late for pools.",
@@ -144,6 +158,7 @@ var johnArray = [
   "I wasn't going to win the next set anyway.",
   "I was blinded by Pkay's drip.",
   "How many times do I have to tell you? I'm not a Fox main!!!!",
+  "I ran out of estradiol.",
 ];
 
 function random_item(johnArray) {
